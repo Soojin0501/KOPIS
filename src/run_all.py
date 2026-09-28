@@ -8,9 +8,11 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-STEPS = ["step1_split", "step2_missing", "step3_person_genre", "step5_dpi", "step6_compare", "step7_improve"]
+STEPS = ["step1_split", "step2_missing", "step3_person_genre", "step5_dpi", "step6_compare", "step7_improve",
+         "step8_region_venue"]
 if "--model" in sys.argv:
     STEPS.insert(3, "step4_genre_gcn")
+    STEPS.append("step9_confident_pairs")      # 분류 모델의 예측이 있어야 한다
 
 for s in STEPS:
     print(f"\n{'=' * 20} {s} {'=' * 20}", flush=True)
