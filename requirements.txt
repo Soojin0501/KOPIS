@@ -1,0 +1,8 @@
+pandas
+numpy
+scipy
+scikit-learn
+duckdb
+matplotlib
+torch
+torch-geometric

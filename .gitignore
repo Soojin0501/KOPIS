@@ -1,0 +1,23 @@
+# 원천 데이터 — 586MB. GitHub 파일 크기 한도를 넘는다
+data/raw/temp.csv
+
+# 적재해서 만든 데이터베이스
+data/*.duckdb
+data/*.duckdb.wal
+
+# 정리 전 원본 사본
+_source/
+
+# 실행 환경
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 실행 로그
+review/out_*.log
+
+# OS·에디터
+.DS_Store
+Thumbs.db
+.vscode/

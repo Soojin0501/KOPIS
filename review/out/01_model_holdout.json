@@ -1,0 +1,102 @@
+{
+  "genres": [
+    "대중무용",
+    "대중음악",
+    "무용",
+    "뮤지컬",
+    "서양음악",
+    "연극",
+    "한국음악"
+  ],
+  "nodes": 142215,
+  "edges": 432057,
+  "A_train_on_all_eval_on_train": {
+    "n": 72612,
+    "micro_f1": 0.9934,
+    "macro_f1": 0.9452,
+    "hamming_acc": 0.9981,
+    "top1_acc": 0.9981,
+    "top2_acc": 0.9999
+  },
+  "B_holdout_train_part": {
+    "n": 58089,
+    "micro_f1": 0.9922,
+    "macro_f1": 0.9367,
+    "hamming_acc": 0.9978,
+    "top1_acc": 0.9983,
+    "top2_acc": 0.9999
+  },
+  "B_holdout_valid_part": {
+    "n": 14523,
+    "micro_f1": 0.8217,
+    "macro_f1": 0.6853,
+    "hamming_acc": 0.9472,
+    "top1_acc": 0.8375,
+    "top2_acc": 0.9075
+  },
+  "B_valid_with_participants": {
+    "n": 14296,
+    "micro_f1": 0.834,
+    "macro_f1": 0.6993,
+    "hamming_acc": 0.951,
+    "top1_acc": 0.8474,
+    "top2_acc": 0.9166
+  },
+  "B_valid_without_participants": {
+    "n": 227,
+    "micro_f1": 0.2266,
+    "macro_f1": 0.1908,
+    "hamming_acc": 0.7036,
+    "top1_acc": 0.2115,
+    "top2_acc": 0.3392
+  },
+  "B_valid_per_genre": {
+    "대중무용": {
+      "n": 44,
+      "top1_acc": 0.2955
+    },
+    "대중음악": {
+      "n": 2585,
+      "top1_acc": 0.7954
+    },
+    "무용": {
+      "n": 660,
+      "top1_acc": 0.7773
+    },
+    "뮤지컬": {
+      "n": 2155,
+      "top1_acc": 0.8181
+    },
+    "서양음악": {
+      "n": 5897,
+      "top1_acc": 0.8906
+    },
+    "연극": {
+      "n": 2208,
+      "top1_acc": 0.8329
+    },
+    "한국음악": {
+      "n": 974,
+      "top1_acc": 0.7464
+    }
+  },
+  "C_baseline_valid": {
+    "n": 14523,
+    "top1_acc": 0.7724,
+    "top2_acc": 0.8863,
+    "majority_genre": "서양음악"
+  },
+  "composite_second_prob": {
+    "n": 1099,
+    "median_p2": 0.0681,
+    "p2_ge_0.5": 198,
+    "p2_ge_0.3": 314,
+    "p2_ge_0.1": 492,
+    "p1_lt_0.5": 124,
+    "no_participants": 36
+  },
+  "agreement_with_saved_prediction": {
+    "same_first_genre": 0.6724,
+    "same_pair": 0.4167
+  }
+}

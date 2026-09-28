@@ -1,0 +1,386 @@
+{
+  "check4": {
+    "paid": {
+      "rows": 53,
+      "unit": "공연장규모 × 장르조합 (공연 한 건이 아님)",
+      "file_success": 33,
+      "file_fail": 20,
+      "success_rate": 62.3,
+      "fail_rate": 37.7,
+      "rule_matches_file": 1.0,
+      "report_value": 37.7,
+      "report_equals": "실패 비율",
+      "distinct_pairs": 20,
+      "venue_sizes": {
+        "중규모": 20,
+        "소규모": 17,
+        "대규모": 16
+      }
+    },
+    "free": {
+      "rows": 47,
+      "unit": "공연장규모 × 장르조합 (공연 한 건이 아님)",
+      "file_success": 28,
+      "file_fail": 19,
+      "success_rate": 59.6,
+      "fail_rate": 40.4,
+      "rule_matches_file": 1.0,
+      "report_value": 40.4,
+      "report_equals": "실패 비율",
+      "distinct_pairs": 21,
+      "venue_sizes": {
+        "중규모": 19,
+        "대규모": 17,
+        "소규모": 11
+      }
+    }
+  },
+  "check5": {
+    "with_seats": {
+      "composite_paid": {
+        "n": 472,
+        "DPI_plus": 44.7854,
+        "DPI_region_adj_seg": 44.767,
+        "U_participation": 0.4879,
+        "S_scale": 0.4811,
+        "A_afford": 0.4473
+      },
+      "composite_free": {
+        "n": 228,
+        "DPI_plus": 50.912,
+        "DPI_region_adj_seg": 50.7244,
+        "U_participation": 0.5271,
+        "S_scale": 0.5412,
+        "A_afford": 0.3866
+      },
+      "single_paid": {
+        "n": 34173,
+        "DPI_plus": 45.3262,
+        "DPI_region_adj_seg": 45.2902,
+        "U_participation": 0.5018,
+        "S_scale": 0.5113,
+        "A_afford": 0.4116
+      },
+      "single_free": {
+        "n": 4071,
+        "DPI_plus": 42.8035,
+        "DPI_region_adj_seg": 42.4483,
+        "U_participation": 0.4853,
+        "S_scale": 0.4056,
+        "A_afford": 0.1864
+      },
+      "composite_all": {
+        "n": 700,
+        "DPI_plus": 46.7809,
+        "DPI_region_adj_seg": 46.7075,
+        "U_participation": 0.5007,
+        "S_scale": 0.5007,
+        "A_afford": 0.4276
+      },
+      "single_all": {
+        "n": 38244,
+        "DPI_plus": 45.0576,
+        "DPI_region_adj_seg": 44.9877,
+        "U_participation": 0.5,
+        "S_scale": 0.5,
+        "A_afford": 0.3905
+      },
+      "welch_paid": {
+        "DPI_plus": {
+          "composite": 44.7854,
+          "single": 45.3262,
+          "t": -0.659,
+          "p": 0.51
+        },
+        "U_participation": {
+          "composite": 0.4879,
+          "single": 0.5018,
+          "t": -1.051,
+          "p": 0.294
+        },
+        "S_scale": {
+          "composite": 0.4811,
+          "single": 0.5113,
+          "t": -3.688,
+          "p": 0.000252
+        },
+        "A_afford": {
+          "composite": 0.4473,
+          "single": 0.4116,
+          "t": 6.597,
+          "p": 1.09e-10
+        }
+      },
+      "welch_free": {
+        "DPI_plus": {
+          "composite": 50.912,
+          "single": 42.8035,
+          "t": 5.364,
+          "p": 1.84e-07
+        },
+        "U_participation": {
+          "composite": 0.5271,
+          "single": 0.4853,
+          "t": 2.09,
+          "p": 0.0376
+        },
+        "S_scale": {
+          "composite": 0.5412,
+          "single": 0.4056,
+          "t": 11.465,
+          "p": 1.16e-24
+        },
+        "A_afford": {
+          "composite": 0.3866,
+          "single": 0.1864,
+          "t": 5.267800291799924e+16,
+          "p": 0.0
+        }
+      }
+    },
+    "without_seats": {
+      "composite_paid": {
+        "n": 372,
+        "DPI_plus": 39.8945,
+        "DPI_region_adj_seg": 40.0085,
+        "U_participation": 0.4816,
+        "S_scale": 0.4762,
+        "A_afford": 0.322
+      },
+      "composite_free": {
+        "n": 204,
+        "DPI_plus": 51.7705,
+        "DPI_region_adj_seg": 51.6084,
+        "U_participation": 0.536,
+        "S_scale": 0.5458,
+        "A_afford": 0.822
+      },
+      "single_paid": {
+        "n": 33261,
+        "DPI_plus": 44.5384,
+        "DPI_region_adj_seg": 44.4697,
+        "U_participation": 0.5046,
+        "S_scale": 0.5132,
+        "A_afford": 0.4527
+      },
+      "single_free": {
+        "n": 4303,
+        "DPI_plus": 41.546,
+        "DPI_region_adj_seg": 41.2061,
+        "U_participation": 0.4616,
+        "S_scale": 0.4057,
+        "A_afford": 0.9527
+      },
+      "composite_all": {
+        "n": 576,
+        "DPI_plus": 44.1006,
+        "DPI_region_adj_seg": 44.1168,
+        "U_participation": 0.5009,
+        "S_scale": 0.5009,
+        "A_afford": 0.4991
+      },
+      "single_all": {
+        "n": 37564,
+        "DPI_plus": 44.2181,
+        "DPI_region_adj_seg": 44.1204,
+        "U_participation": 0.5,
+        "S_scale": 0.5017,
+        "A_afford": 0.5
+      },
+      "welch_paid": {
+        "DPI_plus": {
+          "composite": 39.8945,
+          "single": 44.5384,
+          "t": -5.522,
+          "p": 6.22e-08
+        },
+        "U_participation": {
+          "composite": 0.4816,
+          "single": 0.5046,
+          "t": -1.555,
+          "p": 0.121
+        },
+        "S_scale": {
+          "composite": 0.4762,
+          "single": 0.5132,
+          "t": -4.176,
+          "p": 3.68e-05
+        },
+        "A_afford": {
+          "composite": 0.322,
+          "single": 0.4527,
+          "t": -13.356,
+          "p": 9.86e-34
+        }
+      },
+      "welch_free": {
+        "DPI_plus": {
+          "composite": 51.7705,
+          "single": 41.546,
+          "t": 6.477,
+          "p": 5.93e-10
+        },
+        "U_participation": {
+          "composite": 0.536,
+          "single": 0.4616,
+          "t": 3.544,
+          "p": 0.00048
+        },
+        "S_scale": {
+          "composite": 0.5458,
+          "single": 0.4057,
+          "t": 11.522,
+          "p": 2.55e-24
+        },
+        "A_afford": {
+          "composite": 0.822,
+          "single": 0.9527,
+          "t": -8148776221601583.0,
+          "p": 0.0
+        }
+      }
+    },
+    "report": {
+      "table7_all": {
+        "composite": 51.98,
+        "single": 45.06,
+        "U": [
+          0.500714,
+          0.500013
+        ],
+        "S": [
+          0.500714,
+          0.500013
+        ],
+        "A": [
+          0.427556,
+          0.390496
+        ]
+      },
+      "table8_paid": {
+        "composite": 40.6553,
+        "single": 44.6132,
+        "n": [
+          477,
+          35980
+        ]
+      },
+      "table9_free": {
+        "composite": 51.3927,
+        "single": 41.3985,
+        "n": [
+          228,
+          4091
+        ]
+      }
+    },
+    "table7_candidates": {
+      "pair_paid": {
+        "DPI_AB": 51.4858,
+        "mean_of_A_B": 46.9437,
+        "U_AB": 0.465717,
+        "S_AB": 0.490084,
+        "A_AB": 0.457514
+      },
+      "pair_free": {
+        "DPI_AB": 47.9499,
+        "mean_of_A_B": 45.1787,
+        "U_AB": 0.495802,
+        "S_AB": 0.51306,
+        "A_AB": 0.386625
+      },
+      "pair_both": {
+        "DPI_AB": 49.8239,
+        "mean_of_A_B": 46.1142,
+        "U_AB": 0.479857,
+        "S_AB": 0.500883,
+        "A_AB": 0.424196,
+        "U_single": 0.49929,
+        "S_single": 0.497621,
+        "A_single": 0.316655
+      }
+    }
+  },
+  "check6": {
+    "paid": {
+      "rows": 53,
+      "train_rows": 42,
+      "test_rows": 11,
+      "rf_r2_on_test": 0.9213,
+      "rf_mse_on_test": 18.03,
+      "rf_r2_5fold": [
+        0.918,
+        0.946,
+        0.81,
+        0.861,
+        0.775
+      ],
+      "rf_r2_5fold_mean": 0.8619,
+      "linear_r2_on_test": 0.9824,
+      "formula_r2_all": 0.7943,
+      "formula_corr_all": 0.9864,
+      "feature_importance": {
+        "U_participation": 0.926,
+        "S_scale": 0.049,
+        "A_afford": 0.025
+      },
+      "A_distinct_values": 53,
+      "report": {
+        "r2": 0.918,
+        "mse": 18.8
+      },
+      "notebook": {
+        "r2": 0.921,
+        "mse": 18.12
+      }
+    },
+    "free": {
+      "rows": 47,
+      "train_rows": 37,
+      "test_rows": 10,
+      "rf_r2_on_test": 0.8784,
+      "rf_mse_on_test": 20.82,
+      "rf_r2_5fold": [
+        0.871,
+        0.942,
+        0.979,
+        0.96,
+        0.889
+      ],
+      "rf_r2_5fold_mean": 0.9281,
+      "linear_r2_on_test": 0.9895,
+      "formula_r2_all": 0.9861,
+      "formula_corr_all": 0.9959,
+      "feature_importance": {
+        "U_participation": 0.905,
+        "S_scale": 0.095,
+        "A_afford": 0.0
+      },
+      "A_distinct_values": 1,
+      "report": {
+        "r2": 0.884,
+        "mse": 19.9
+      },
+      "notebook": {
+        "r2": 0.8785,
+        "mse": 20.81
+      }
+    },
+    "performance_level_paid": {
+      "rows": 472,
+      "formula_corr": 0.9977,
+      "ratio_min": 0.841,
+      "ratio_max": 1.076
+    },
+    "performance_level_free": {
+      "rows": 228,
+      "formula_corr": 1.0,
+      "ratio_min": 1.0,
+      "ratio_max": 1.0
+    }
+  },
+  "empty_prediction_in_analysis_sample": {
+    "rows": 705,
+    "empty": 129
+  }
+}
