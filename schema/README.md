@@ -22,6 +22,12 @@
 
 ## 엔터티와 관계
 
+전체 표 16개와 열 88개, 외래키 17개를 담은 그림이다. `05_erd.py` 가 `schema.sql` 을 읽어 만든다.
+
+![전체 ERD](erd.svg)
+
+주요 표만 간추린 그림이다.
+
 ```mermaid
 erDiagram
     FACILITY ||--o{ HALL : "안에 있다"
@@ -185,6 +191,7 @@ python schema/01_profile_raw.py    # 원천 적재와 열 구조 파악
 python schema/02_check_keys.py     # 키 후보 검증
 python schema/03_build.py          # 테이블 생성, 적재, 검증
 python schema/04_queries.py        # 분석 질의
+python schema/05_erd.py            # 전체 ERD 그림
 ```
 
 `data/raw/temp.csv` 가 있어야 한다. 586MB 라 저장소에는 없다.

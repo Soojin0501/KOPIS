@@ -35,7 +35,7 @@ flowchart LR
 | `outputs/` | 정리한 코드가 만든 결과와 점검표 | 2026 |
 | `docs/REPORT_CODE_MAP.md` | [보고서와 코드의 대응표](docs/REPORT_CODE_MAP.md) | 2026 |
 | `review/` | [재검토 보고서](review/README.md) | 2026 |
-| `schema/` | [관계형 데이터 모델](schema/README.md) | 2026 |
+| `schema/` | [관계형 데이터 모델](schema/README.md) 과 [전체 ERD](schema/erd.svg) | 2026 |
 
 2025년 자료는 내용을 고치지 않고 폴더만 정리했다. 노트북은 확장자를 붙이고 실행 기록의 계정 정보를 지웠다.
 
