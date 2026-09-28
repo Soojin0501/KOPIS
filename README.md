@@ -1,6 +1,6 @@
 # KOPIS — 복합 장르 공연 콘텐츠의 수익성과 확장 가능성 분석
 
-제5회 KOPIS 빅데이터 공모전 분석 부문 수상작의 자료와, 1년 뒤에 다시 확인한 기록이다.
+제5회 KOPIS 빅데이터 공모전 데이터분석 부문 혁신상 (1등) 수상작의 자료와, 1년 뒤에 다시 확인한 기록이다.
 
 공연예술통합전산망은 복합 장르 공연을 한 항목으로만 기록한다. 어떤 장르의 조합인지 알 수 없어 성과를 비교할 수 없다. 이 프로젝트는 복합 공연을 장르 둘의 조합으로 풀고, 자체 성과지표로 단일 장르와 비교했다.
 
@@ -42,7 +42,7 @@ flowchart LR
 
 | 담당 | 내용 |
 |---|---|
-| 김수진 | 복합 장르 분류 모델 설계와 구현, 발표, 발표 자료 제작 |
+| 김수진 | 복합 장르 분류 모델 설계와 구현, 동명이인 처리 기준, 발표, 발표 자료 제작 |
 | 팀원 | 성과지표 설계와 산출, 복합과 단일 비교 |
 | 팀원 | 성공 판정 시각화, 회귀 모델, 그래프 실험 |
 
@@ -63,15 +63,18 @@ flowchart LR
 
 ```bash
 # 재검토
-docker build -t kopis-review .
-docker run --rm -v "$PWD:/work" kopis-review python review/01_model_holdout.py
-docker run --rm -v "$PWD:/work" kopis-review python review/02_indicator_checks.py
+pip install -r requirements.txt
+python review/01_model_holdout.py
+python review/02_indicator_checks.py
 
 # 관계형 모델
-pip install duckdb
 python schema/01_profile_raw.py
+python schema/02_check_keys.py
 python schema/03_build.py
+python schema/04_queries.py
 ```
+
+`Dockerfile` 은 같은 환경을 컨테이너로 만든다. 로컬 설치가 어려울 때 쓴다.
 
 ## 데이터
 

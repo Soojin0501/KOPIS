@@ -88,7 +88,7 @@
   },
   "composite_second_prob": {
     "n": 1099,
-    "median_p2": 0.0681,
+    "median_p2": 0.068,
     "p2_ge_0.5": 198,
     "p2_ge_0.3": 314,
     "p2_ge_0.1": 492,
@@ -96,7 +96,7 @@
     "no_participants": 36
   },
   "agreement_with_saved_prediction": {
-    "same_first_genre": 0.6724,
+    "same_first_genre": 0.6715,
     "same_pair": 0.4167
   }
 }

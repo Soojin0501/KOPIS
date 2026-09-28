@@ -5,9 +5,9 @@
 수치는 모두 아래 두 스크립트의 출력이다. 원본 출력은 `out/` 에 있다.
 
 ```bash
-docker build -t kopis-review .
-docker run --rm -v "$PWD:/work" kopis-review python review/01_model_holdout.py
-docker run --rm -v "$PWD:/work" kopis-review python review/02_indicator_checks.py
+pip install -r requirements.txt
+python review/01_model_holdout.py
+python review/02_indicator_checks.py
 ```
 
 ## 요약

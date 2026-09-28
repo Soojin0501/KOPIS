@@ -8,7 +8,7 @@
   C. 기준선: 모델 없이, 참여자들이 학습 구간에서 가장 많이 참여한 장르로 맞힌다.
 
 실행 (저장소 루트에서)
-  docker run --rm -v "$PWD:/work" kopis-review python review/01_model_holdout.py
+  python review/01_model_holdout.py
 """
 import json
 import re

@@ -5,7 +5,7 @@
   6. 회귀 모델의 설명력은 무엇을 뜻하는가
 
 실행 (저장소 루트에서)
-  docker run --rm -v "$PWD:/work" kopis-review python review/02_indicator_checks.py
+  python review/02_indicator_checks.py
 """
 import json
 from pathlib import Path
