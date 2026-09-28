@@ -21,3 +21,10 @@ review/out_*.log
 .DS_Store
 Thumbs.db
 .vscode/
+
+# 새로 만드는 결과 중 큰 파일 — 코드를 돌리면 다시 생긴다
+outputs/step1/single.csv
+outputs/step1/composite.csv
+outputs/step3/person_*.csv
+outputs/step5/*/dpi_*.csv
+outputs/*.log
